@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<localization>
+	<entity id="label">
+		<locale lang="fr">libellé</locale>
+		<locale lang="en">label</locale>
+	</entity>
+	
+	<entity id="votes">
+		<locale lang="fr">Nombre de votes</locale>
+		<locale lang="en">votes number</locale>
+	</entity>
+</localization>

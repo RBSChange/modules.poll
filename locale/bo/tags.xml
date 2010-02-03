@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<localization>
+	<entity id="Poll">
+		<locale lang="fr">sondage par défaut</locale>
+		<locale lang="en">default poll</locale>
+	</entity>
+</localization>

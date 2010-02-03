@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<script>
+	<binding fileName="modules/generic/persistentdocument/import/generic_binding.xml" />
+	<binding fileName="modules/list/persistentdocument/import/list_binding.xml" />
+
+	<systemfolder module="list" relatedmodule="poll">
+		<staticlist listid="modules_poll/display" label="Poll Display">
+			<staticitem value="radio" label="&amp;modules.poll.bo.general.Radio;" />
+			<staticitem value="checkbox" label="&amp;modules.poll.bo.general.Checkbox;" />
+		</staticlist>
+	</systemfolder>
+
+</script>

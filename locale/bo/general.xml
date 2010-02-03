@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<localization>
+	<entity id="module-name">
+		<locale lang="fr">sondage</locale>
+		<locale lang="en">poll</locale>
+	</entity>
+
+	<entity id="tree-root-name">
+		<locale lang="fr">sondage</locale>
+		<locale lang="en">poll</locale>
+	</entity>
+
+	<entity id="system-folder-name">
+		<locale lang="fr">sondage</locale>
+		<locale lang="en">poll</locale>
+	</entity>
+
+	<entity id="display-taggued-block-error">
+		<locale lang="fr">Sondage par défaut non trouvé.</locale>
+	</entity>
+
+	<entity id="No-poll">
+		<locale lang="fr">Aucun sondage à afficher</locale>
+	</entity>
+
+	<entity id="radio">
+		<locale lang="fr">boutons radio (choix unique)</locale>
+		<locale lang="en">radio buttons (unique choice)</locale>
+	</entity>
+	<entity id="checkbox">
+		<locale lang="fr">cases à cocher (choix multiple)</locale>
+		<locale lang="en">checkbox (multiple choice)</locale>
+	</entity>
+</localization>

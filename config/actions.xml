@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<actions extends="generic">
+  <action name="createResponse" label="&amp;modules.poll.bo.actions.Create-Response;">
+    <parameter name="listWidget"/>
+    <body><![CDATA[this.createDocument(listWidget, this.name, 'response', 'moduleForm');]]></body>
+  </action>
+  <action name="createPoll" label="&amp;modules.poll.bo.actions.Create-Poll;">
+    <parameter name="listWidget"/>
+    <body><![CDATA[this.createDocument(listWidget, this.name, 'poll', 'moduleForm');]]></body>
+  </action>
+  <action name="deactivated" label="&amp;modules.uixul.bo.actions.Deactivate;" icon="media_pause">
+    <parameter name="listWidget"/>
+    <body><![CDATA[
+    	var ids = listWidget.getSelectedIds();
+    	var lang = this.getContextLang(listWidget);
+    	this.execute("%label%", "Deactivated", { {K::COMPONENT_ID_ACCESSOR}: ids, {K::COMPONENT_LANG_ACCESSOR} : lang });
+    ]]></body>
+    <checkDisplay><![CDATA[
+    	var type = document.component.(@name=="type");
+    	if ( type == "modules_poll_response" || type == "modules_poll_text" )
+    	{
+    		var votes = document.component.(@name=="votes");
+	    	if ( votes > 0 )
+	    	{
+	    		return false;
+	    	}
+    	}
+
+    	var status = document.component.(@name=="status");
+    	return status == 'ACTIVE' || status == 'PUBLICATED';
+    ]]></checkDisplay>
+  </action>
+  <action name="createText" label="&amp;modules.poll.bo.actions.Create-Text;">
+    <parameter name="listWidget"/>
+    <body><![CDATA[this.createDocument(listWidget, this.name, 'text', 'moduleForm');]]></body>
+  </action>
+  <action name="seeAnswer" label="&amp;modules.poll.bo.actions.Seeanswer;" icon="data_find" selectionType="single">
+    <parameter name="listWidget"/>
+    <body><![CDATA[
+		var ids = listWidget.getSelectedIds();
+		window.open(this.getController().makeUrl('poll', 'SeeAnswer', { {K::COMPONENT_ID_ACCESSOR}: ids[0] }), 'pollAnswer', 'width=780,height=560,scrollbars=yes,resizeable=true');
+    ]]></body>
+    <checkDisplay><![CDATA[
+    	var status = document.component.(@name=="votes");
+    	return status != undefined;
+    ]]></checkDisplay>
+  </action>
+  <action name="seeStats" label="&amp;modules.poll.bo.actions.Seestats;" icon="data_find" selectionType="single">
+    <parameter name="listWidget"/>
+    <body><![CDATA[
+		var ids = listWidget.getSelectedIds();
+		window.open(this.getController().makeUrl('poll', 'SeeStats', { {K::COMPONENT_ID_ACCESSOR}: ids[0] }), 'pollStats', 'width=780,height=560,scrollbars=yes,resizeable=true');
+    ]]></body>
+    <checkDisplay><![CDATA[
+    	var status = document.component.(@name=="votes");
+    	return status != undefined;
+    ]]></checkDisplay>
+  </action>
+</actions>

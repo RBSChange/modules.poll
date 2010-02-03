@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<script>
+	<binding fileName="modules/generic/persistentdocument/import/generic_binding.xml" />
+
+	<binding name="poll" className="poll_PollScriptDocumentElement" />
+	<binding name="response" className="poll_ResponseScriptDocumentElement" />
+	<binding name="text" className="poll_TextScriptDocumentElement" />
+	<binding name="textanswer" className="poll_TextanswerScriptDocumentElement" />
+</script>

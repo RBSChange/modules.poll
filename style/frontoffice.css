@@ -1,0 +1,12 @@
+.modules-poll-response{
+	background: #B0C900;
+}
+.modules-poll-response-container{
+	max-width: 300px;
+	border: 1px solid #999;
+}
+
+.modules-poll-TagguedPoll input
+{
+	float: none;
+}

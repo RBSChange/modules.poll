@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<localization>
+	<entity id="submit">
+		<locale lang="fr">Soumettre</locale>
+		<locale lang="en"></locale>
+	</entity>
+	
+	<entity id="SeeMore">
+		<locale lang="fr">En savoir plus</locale>
+		<locale lang="en"></locale>
+	</entity>
+
+	<entity id="AlreadyParticipated">
+		<locale lang="fr">Vous avez déjà participé à ce sondage.</locale>
+		<locale lang="en"></locale>
+	</entity>
+	
+	<entity id="NotDisplayResult">
+		<locale lang="fr">Les résultats du sondage seront publiés à la fin de celui ci.</locale>
+		<locale lang="en"></locale>
+	</entity>
+	
+	<entity id="voteNumber">
+		<locale lang="fr">{votes} vote</locale>
+		<locale lang="en"></locale>
+	</entity>
+	
+	<entity id="votesNumber">
+		<locale lang="fr">{votes} votes</locale>
+		<locale lang="en"></locale>
+	</entity>
+	
+	<entity id="voteTotalNumber">
+		<locale lang="fr">{votes} vote au total.</locale>
+		<locale lang="en"></locale>
+	</entity>
+	
+	<entity id="votesTotalNumber">
+		<locale lang="fr">{votes} votes au total.</locale>
+		<locale lang="en"></locale>
+	</entity>
+	
+	<entity id="missingResponseError">
+		<locale lang="fr">veuillez répondre au sondage.</locale>
+	</entity>
+</localization>

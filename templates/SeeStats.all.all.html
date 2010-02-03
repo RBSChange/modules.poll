@@ -1,0 +1,10 @@
+<style tal:replace="style" />
+<h2 tal:content="item/getLabel"/>
+<tal:block tal:repeat="response item/getChildrenPublishedResponse">
+	<div class="pollanswer pollanswer${repeat/response/number}">${response/getLabel} : ${response/getPourcentValue}% <span title="${response/getVotesAsLocalizedString}">(${response/getVotesAsNumber})</span></div>
+	<div class="modules-poll-response-container">
+		<div class="modules-poll-response modules-poll-response${repeat/response/number}" style="width: ${response/getPourcentValue}%">&nbsp;</div>
+	</div>
+</tal:block>
+<div tal:condition="php: item->getVotes() > 1" change:translate="&modules.poll.frontoffice.votesTotalNumber;; votes item/getVotes" />
+<div tal:condition="php: item->getVotes() < 2" change:translate="&modules.poll.frontoffice.voteTotalNumber;; votes item/getVotes" />

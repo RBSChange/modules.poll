@@ -1,0 +1,28 @@
+<p class="normal"><em tal:content="item/getQuestion"/></p>
+
+<div tal:condition="item/getDescription" tal:content="item/getDescriptionAsHtml" />
+
+<p class="block-error" tal:condition="errorText" tal:content="errorText"/>
+
+<form method="post" tal:define="id item/getId" tal:attributes="action actionName">
+	<div><input type="hidden" name="pollParam[currentPoll]" tal:attributes="value item/getId" /></div>
+	<ol>
+		<li tal:repeat="response item/getChildrenPublishedResponse">
+			<tal:block tal:condition="php: item->getDisplay() == 'radio'"><tal:block tal:define="global name 'pollParam[response]'"/></tal:block>
+			<tal:block tal:condition="php: item->getDisplay() == 'checkbox'"><tal:block tal:define="global name 'pollParam[response][]'"/></tal:block>
+			<tal:block tal:condition="response/isText"><tal:block tal:define="global name php: 'pollParam[text][' . response->getId() . ']'"/></tal:block>
+			<tal:block tal:condition="not: response/isText">
+				<input tal:attributes="id response/getHtmlId; value response/getId; name name; type item/getDisplay" class="pollbutton" /> <label tal:attributes="for response/getHtmlId" tal:content="response/getLabel"/>
+			</tal:block>
+			<tal:block tal:condition="response/isText">
+				<label tal:attributes="for response/getId" tal:content="response/getLabel"/>
+				<input tal:condition="not: response/getMultiline" tal:attributes="id response/getHtmlId; name name" type="text" class="polltext" />
+				<textarea tal:condition="response/getMultiline" tal:attributes="id response/getHtmlId; name name" type="text" class="polltextarea" />
+			</tal:block>
+		</li>
+		<li>
+			<br class="cleaner"/>
+			<input name="pollParam[submit]" class="button submit" type="submit" i18n:attributes="value &modules.poll.frontoffice.submit;" />
+		</li>
+	</ol>
+</form>

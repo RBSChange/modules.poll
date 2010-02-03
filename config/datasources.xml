@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<datasources>
+  <!-- Use it for the website module -->
+  <datasource name="pagecontent" treecomponents="modules_website/topic" listcomponents="modules_poll/poll"/>
+</datasources>

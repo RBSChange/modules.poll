@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<behaviour>
+
+  <event type="drop" target="modules_generic_rootfolder" flavour="listitem/component" source="modules_website_topic" actions="move"/>
+  <event type="drop" target="modules_website_topic" flavour="listitem/component" source="modules_poll_response modules_poll_poll" actions="move"/>
+
+  <event type="select contextmenu" target="modules_website_topic" actions="create_ editPermissions -rename -delete remove">
+    <actiongroup name="create_" icon="add" actions="createPoll"/>
+  </event>
+  <event type="select contextmenu" target="modules_poll_poll" actions="createresponse_ editPermissions -rename">
+    <actiongroup name="createresponse_" icon="add" actions="createResponse createText"/>
+  </event>
+  <event type="select contextmenu" target="modules_generic_rootfolder" actions="-openOrderChildren addTopic | editPermissions -createFolder"/>
+
+  <datasource module="poll" components="modules_website/topic modules_poll/poll"/>
+
+  <columns>
+    <column ref="label" flex="5" label="Module-name" primary="true" properties="type"/>
+  </columns>
+
+</behaviour>

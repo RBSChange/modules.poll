@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<blocks>
+	<block type="modules_poll_ContextualPoll" display="" icon="column-chart" label="&amp;modules.poll.bo.blocks.ContextualPoll;"/>
+	<block type="modules_poll_TagguedPoll" display="" icon="column-chart" label="&amp;modules.poll.bo.blocks.TagguedPoll;"/>
+</blocks>

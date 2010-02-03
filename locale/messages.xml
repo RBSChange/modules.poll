@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<localization>
+	<entity id="error.EndDateMustBeAfterStartDate">
+		<locale lang="fr">la date de fin de validité doit être supérieur à la date de début.</locale>
+		<locale lang="en">the end date must be after the start date</locale>
+	</entity>
+</localization>

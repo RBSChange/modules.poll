@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document xmlns="http://www.rbs.fr/schema/change-document/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.rbs.fr/schema/change-document/1.0 http://www.rbschange.fr/static/schema/change-document/1.0.xsd"
+    model-version="1.0" icon="column-chart" has-url="false">
+	<properties>
+		<add name="question" type="String"  min-occurs="1" max-occurs="1" localized="true"/>
+		<add name="description" type="XHTMLFragment"  min-occurs="0" max-occurs="1" localized="true"/>
+		<add name="displayresult" type="Boolean"  min-occurs="0" max-occurs="1" default-value="true"/>
+		<add name="partcomment" type="XHTMLFragment"  min-occurs="0" max-occurs="1" localized="true"/>
+		<add name="closecomment" type="XHTMLFragment"  min-occurs="0" max-occurs="1" localized="true"/>
+		<add name="relatedpage" type="modules_generic/Document"  min-occurs="0" max-occurs="1"/>
+		<add name="votes" type="Integer" min-occurs="0" max-occurs="1" default-value="0"/>
+		<add name="pollclosing" type="DateTime"  min-occurs="1" max-occurs="1"/>
+		<add name="publicationstatus" localized="true"/>
+		<add name="display" type="String" from-list="modules_poll/display" min-occurs="1" max-occurs="1" />
+	</properties>
+
+	<children>
+		<child name="response" type="modules_poll/response" />
+	</children>
+
+	<form>
+		<property name="votes" display="readonly"/>
+		<property name="startpublicationdate" display="edit"/>
+		<property name="endpublicationdate" enddate="true" display="edit"/>
+		<property name="pollclosing" enddate="true"/>
+		<property name="relatedpage" allow="modules_website_page,modules_website_pageexternal"/>
+	</form>
+</document>
