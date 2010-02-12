@@ -4,14 +4,12 @@
 		<document name="rootfolder" />
 		<document name="topic" />
 		<action name="GetDialogTopicTree" back-office-name="addTopic" />
-		
 		<document name="poll">
 			<action name="Insert" back-office-name="createPoll"/>
 		</document>
 		<document name="response">
 			<action name="Insert" back-office-name="createResponse"/>
 		</document>
-	
 		<action name="UpdateResponse" />
 	</actions>
 
@@ -25,6 +23,7 @@
 			<permission name="Move.*" />
 			<permission name="GetDialogTopicTree" />
 			<permission name="Remove.topic" />
+			<permission name="EditLocale"/>
 		</role>
 		
 		<role name="Writer" extend="Guest">
