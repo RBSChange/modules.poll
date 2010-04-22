@@ -34,4 +34,19 @@ class poll_TextService extends poll_ResponseService
 	{
 		return $this->pp->createQuery('modules_poll/text');
 	}
+	
+    /**
+     * @see f_persistentdocument_DocumentService::getResume()
+     *
+     * @param poll_persistentdocument_text $document
+     * @param string $forModuleName
+     * @param unknown_type $allowedSections
+     * @return array
+     */
+    public function getResume ($document, $forModuleName, $allowedSections = null)
+    {
+       $data = parent::getResume($document, $forModuleName, $allowedSections);
+       $data['properties']['numberofvotes'] = $document->getVotes();
+       return $data;
+    }		
 }

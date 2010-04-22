@@ -6,7 +6,4 @@
 	<properties>
 		<add name="multiline" type="Boolean" default-value="false"/>
 	</properties>
-	<form>
-			<property name="votes" display="readonly"/>
-	</form>
 </document>

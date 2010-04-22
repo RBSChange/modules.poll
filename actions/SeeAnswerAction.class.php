@@ -1,5 +1,5 @@
 <?php
-class poll_SeeAnswerAction extends poll_Action
+class poll_SeeAnswerAction extends f_action_BaseAction 
 {
 	/**
 	 * @param Context $context

@@ -1,14 +1,24 @@
 <?xml version="1.0"?>
 <actions extends="generic">
-  <action name="createResponse" label="&amp;modules.poll.bo.actions.Create-Response;">
+  <action name="createPoll">
     <parameter name="listWidget"/>
-    <body><![CDATA[this.createDocument(listWidget, this.name, 'response', 'moduleForm');]]></body>
+    <body><![CDATA[
+    	this.createDocumentEditor('modules_poll_poll', listWidget.getSelectedItems()[0].id);
+    ]]></body>
   </action>
-  <action name="createPoll" label="&amp;modules.poll.bo.actions.Create-Poll;">
+  <action name="createResponse">
     <parameter name="listWidget"/>
-    <body><![CDATA[this.createDocument(listWidget, this.name, 'poll', 'moduleForm');]]></body>
+    <body><![CDATA[
+    	this.createDocumentEditor('modules_poll_response', listWidget.getSelectedItems()[0].id);
+    ]]></body>
   </action>
-  <action name="deactivated" label="&amp;modules.uixul.bo.actions.Deactivate;" icon="media_pause">
+  <action name="createText">
+    <parameter name="listWidget"/>
+    <body><![CDATA[
+    	this.createDocumentEditor('modules_poll_text', listWidget.getSelectedItems()[0].id);
+    ]]></body>
+  </action>
+  <action name="deactivated">
     <parameter name="listWidget"/>
     <body><![CDATA[
     	var ids = listWidget.getSelectedIds();
@@ -30,11 +40,7 @@
     	return status == 'ACTIVE' || status == 'PUBLICATED';
     ]]></checkDisplay>
   </action>
-  <action name="createText" label="&amp;modules.poll.bo.actions.Create-Text;">
-    <parameter name="listWidget"/>
-    <body><![CDATA[this.createDocument(listWidget, this.name, 'text', 'moduleForm');]]></body>
-  </action>
-  <action name="seeAnswer" label="&amp;modules.poll.bo.actions.Seeanswer;" icon="data_find" selectionType="single">
+  <action name="seeAnswer">
     <parameter name="listWidget"/>
     <body><![CDATA[
 		var ids = listWidget.getSelectedIds();
@@ -45,7 +51,7 @@
     	return status != undefined;
     ]]></checkDisplay>
   </action>
-  <action name="seeStats" label="&amp;modules.poll.bo.actions.Seestats;" icon="data_find" selectionType="single">
+  <action name="seeStats">
     <parameter name="listWidget"/>
     <body><![CDATA[
 		var ids = listWidget.getSelectedIds();

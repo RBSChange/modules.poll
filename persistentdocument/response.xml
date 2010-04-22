@@ -8,8 +8,4 @@
 	</properties>
 
 	<statuses default="ACTIVE"/>
-	
-	<form>
-		<property name="votes" display="readonly"/>
-	</form>
 </document>

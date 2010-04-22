@@ -31,4 +31,8 @@
 		<locale lang="fr">cases à cocher (choix multiple)</locale>
 		<locale lang="en">checkbox (multiple choice)</locale>
 	</entity>
+	<entity id="column.votes">
+		<locale lang="fr">nombre de vote</locale>
+		<locale lang="en">votes</locale>
+	</entity>	
 </localization>

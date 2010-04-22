@@ -7,6 +7,4 @@
 		<add name="label" type="LongString"/>
 		<add name="text" type="modules_poll/text" max-occurs="1" />
 	</properties>
-	<form>
-	</form>
 </document>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<script>
+  <binding fileName="modules/useractionlogger/persistentdocument/import/useractionlogger_binding.xml"/>
+  <actiondef modulename="poll" actionname="update.rootfolder" label="modules.poll.bo.useractionlogger.update-rootfolder"/>
+  <actiondef modulename="poll" actionname="insert.poll" label="modules.poll.bo.useractionlogger.insert-poll"/>
+  <actiondef modulename="poll" actionname="activate.poll" label="modules.poll.bo.useractionlogger.activate-poll"/>
+  <actiondef modulename="poll" actionname="insert.response" label="modules.poll.bo.useractionlogger.insert-response"/>
+  <actiondef modulename="poll" actionname="deactivated.poll" label="modules.poll.bo.useractionlogger.deactivated-poll"/>
+  <actiondef modulename="poll" actionname="reactivate.poll" label="modules.poll.bo.useractionlogger.reactivate-poll"/>
+  <actiondef modulename="poll" actionname="insert.text" label="modules.poll.bo.useractionlogger.insert-text"/>
+  <actiondef modulename="poll" actionname="deactivated.text" label="modules.poll.bo.useractionlogger.deactivated-text"/>
+  <actiondef modulename="poll" actionname="reactivate.text" label="modules.poll.bo.useractionlogger.reactivate-text"/>
+</script>

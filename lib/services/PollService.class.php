@@ -105,5 +105,20 @@ class poll_PollService extends f_persistentdocument_DocumentService
 		}
 		return false;
 	}
+    /**
+     * @see f_persistentdocument_DocumentService::getResume()
+     *
+     * @param poll_persistentdocument_poll $document
+     * @param string $forModuleName
+     * @param unknown_type $allowedSections
+     * @return array
+     */
+    public function getResume ($document, $forModuleName, $allowedSections = null)
+    {
+       $data = parent::getResume($document, $forModuleName, $allowedSections);
+       $data['properties']['numberofvotes'] = $document->getVotes();
+       return $data;
+    }
+
 
 }

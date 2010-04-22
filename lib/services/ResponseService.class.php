@@ -44,7 +44,7 @@ class poll_ResponseService extends f_persistentdocument_DocumentService
 	{
 		$parent = DocumentHelper::getDocumentInstance($parentNodeId);
 
-		if ( ! is_null($parent->getVotes()) )
+		if ($parent->getVotes() !== 0 )
 		{
 			throw new IllegalOperationException('Impossible to insert a new response after the first vote');
 		}
@@ -75,7 +75,7 @@ class poll_ResponseService extends f_persistentdocument_DocumentService
 	protected function preDelete($document)
 	{
 		$parent = $this->getParentOf($document);
-		if ( ! is_null($parent->getVotes()) )
+		if ( $parent->getVotes()!== 0 )
 		{
 			throw new IllegalOperationException('Impossible to delete this response without compromize the data of votes');
 		}
@@ -105,4 +105,18 @@ class poll_ResponseService extends f_persistentdocument_DocumentService
 		}
 	}
 
+    /**
+     * @see f_persistentdocument_DocumentService::getResume()
+     *
+     * @param poll_persistentdocument_response $document
+     * @param string $forModuleName
+     * @param unknown_type $allowedSections
+     * @return array
+     */
+    public function getResume ($document, $forModuleName, $allowedSections = null)
+    {
+       $data = parent::getResume($document, $forModuleName, $allowedSections);
+       $data['properties']['numberofvotes'] = $document->getVotes();
+       return $data;
+    }	
 }
