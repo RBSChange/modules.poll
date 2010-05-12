@@ -3,7 +3,7 @@
 	<module>
 		<enabled>true</enabled>
 		<visible>true</visible>
-		<icon>column-chart</icon>
+		<icon>poll</icon>
 		<usetopic>true</usetopic>
 	</module>
 </config>

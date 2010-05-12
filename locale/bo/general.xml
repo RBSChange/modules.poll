@@ -4,12 +4,10 @@
 		<locale lang="fr">sondage</locale>
 		<locale lang="en">poll</locale>
 	</entity>
-
 	<entity id="tree-root-name">
 		<locale lang="fr">sondage</locale>
 		<locale lang="en">poll</locale>
 	</entity>
-
 	<entity id="system-folder-name">
 		<locale lang="fr">sondage</locale>
 		<locale lang="en">poll</locale>
@@ -18,11 +16,9 @@
 	<entity id="display-taggued-block-error">
 		<locale lang="fr">Sondage par défaut non trouvé.</locale>
 	</entity>
-
 	<entity id="No-poll">
 		<locale lang="fr">Aucun sondage à afficher</locale>
 	</entity>
-
 	<entity id="radio">
 		<locale lang="fr">boutons radio (choix unique)</locale>
 		<locale lang="en">radio buttons (unique choice)</locale>
@@ -34,5 +30,9 @@
 	<entity id="column.votes">
 		<locale lang="fr">nombre de vote</locale>
 		<locale lang="en">votes</locale>
-	</entity>	
+	</entity>
+	<entity id="column.pathOf">
+		<locale lang="fr">chemin</locale>
+		<locale lang="en">path</locale>
+	</entity>
 </localization>

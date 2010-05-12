@@ -1,13 +1,12 @@
 treechildren::-moz-tree-image(modules_poll_response){
-	list-style-image: url(/changeicons/small/wlistsimple.png) ;
+	list-style-image: url(/changeicons/small/ui-boolean-field.png) ;
 }
 treechildren::-moz-tree-image(modules_poll_poll){
-	list-style-image: url(/changeicons/small/column-chart.png) ;
+	list-style-image: url(/changeicons/small/poll.png) ;
 }
 treechildren::-moz-tree-image(modules_poll_text){
-	list-style-image: url(/changeicons/small/weditbox.png) ;
+	list-style-image: url(/changeicons/small/ui-text-field.png) ;
 }
-
 treechildren::-moz-tree-image(modules_poll_textanswer){
 	list-style-image: url(/changeicons/small/document.png);
 }

@@ -95,8 +95,6 @@
 		<toolbarbutton name="activate" />
 		<toolbarbutton name="deactivated" />
 		<toolbarbutton name="reactivate" />
-		<toolbarbutton name="seeStats" />
-		<toolbarbutton name="seeAnswer" />
   	</toolbar>
 	<actions>
 		<action name="refresh" single="true" icon="refresh" label="&amp;modules.uixul.bo.actions.Refresh;" />
@@ -108,17 +106,16 @@
 		<action name="deactivated" permission="Deactivated" icon="deactivated" label="&amp;modules.uixul.bo.actions.Deactivate;" />
 		<action name="duplicate" icon="duplicate" label="&amp;modules.uixul.bo.actions.Duplicate;" /> 		 
 		<action name="openTags" single="true" permission="LoadTags" icon="edit-tags" label="&amp;modules.uixul.bo.actions.Open-tags-panel;"/>
-		<action name="seeStats" single="true" icon="data_find" label="&amp;modules.poll.bo.actions.Seestats;"/>
-		<action name="createPoll" permission="Insert_poll" label="&amp;modules.poll.bo.actions.Create-Poll;"/>
-		<action name="createResponse" permission="Insert_response" label="&amp;modules.poll.bo.actions.Create-Response;"/>
-		<action name="createText" permission="Insert_text" label="&amp;modules.poll.bo.actions.Create-Text;"/>
+		<action name="createPoll" permission="Insert_poll" icon="add" label="&amp;modules.poll.bo.actions.Create-Poll;"/>
+		<action name="createResponse" permission="Insert_response" icon="add" label="&amp;modules.poll.bo.actions.Create-Response;"/>
+		<action name="createText" permission="Insert_text" icon="add" label="&amp;modules.poll.bo.actions.Create-Text;"/>
 		<action name="move" permission="Move" icon="up_down" label="&amp;modules.uixul.bo.actions.Move;" />
 		<action name="addTopic" permission="Update_rootfolder" icon="add-topic" label="&amp;modules.uixul.bo.actions.AddTopic;" />
 		<action name="createFolder" single="true" icon="create-folder" label="&amp;modules.uixul.bo.actions.Create-folder;" />
 		<action name="openFolder" icon="open-folder" label="&amp;modules.uixul.bo.actions.OpenFolder;" />
 		<action name="openTopicOrder" single="true" permission="Order" icon="sort" label="&amp;modules.uixul.bo.actions.Set-children-order;"/>
 		<action name="openTreeNodeOrder" single="true" permission="Order" icon="sort" label="&amp;modules.uixul.bo.actions.Set-children-order;" />
-		<action name="seeStats" single="true" icon="data_find" label="&amp;modules.poll.bo.actions.Seestats;" />
-		<action name="seeAnswer" single="true" icon="data_find" label="&amp;modules.poll.bo.actions.Seeanswer;" />	    
+		<action name="seeStats" single="true" icon="statistics" label="&amp;modules.poll.bo.actions.Seestats;" />
+		<action name="seeAnswer" single="true" icon="history" label="&amp;modules.poll.bo.actions.Seeanswer;" />	    
 	</actions>
 </perspective>
