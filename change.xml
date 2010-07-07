@@ -3,7 +3,7 @@
   <name>poll</name>
   <type>change-module</type>
   <license>os</license>
-  <repository>private</repository>
+  <repository>public</repository>
   <version>3.0.3</version>
   <description>Sondage</description>
   <dependencies>
