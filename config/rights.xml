@@ -12,7 +12,6 @@
 		</document>
 		<action name="UpdateResponse" />
 	</actions>
-
 	<roles>	
 		<role name="Admin">
 			<permission name="*" />
@@ -25,7 +24,6 @@
 			<permission name="Remove.topic" />
 			<permission name="EditLocale"/>
 		</role>
-		
 		<role name="Writer" extend="Guest">
 			<permission name="Order" />
 			<permission name="Move.topic" />
@@ -36,21 +34,17 @@
 			<permission name="Insert.*" />
 			<permission name="Update.*" />
 		</role>
-		
 		<role name="Translator" extend="Guest">
 			<permission name="LoadForTranslation.*" />
 			<permission name="UpdateTranslation.*" />
 		</role>
-		
 		<role name="Validator" extend="Guest">
 			<permission name="Activate.*" />
 			<permission name="Cancel.*" />		
 		</role>
-		
 		<role name="Guest" extend="User">
 			<permission name="Enabled" />
 		</role>
-		
 		<role name="User">
 			<permission name="List.*" />
 		</role>
