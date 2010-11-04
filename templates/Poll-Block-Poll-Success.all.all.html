@@ -1,17 +1,17 @@
-<a tal:attributes="name item/getId" />
-<p tal:content="item/getQuestion"/>
+<a name="item/getId"></a>
+<p>${item/getQuestionAsHtml}</p>
 
-<p tal:condition="item/getDescription" tal:content="item/getDescription" />
+<p tal:condition="item/getDescription">${item/getDescriptionAsHtml}</p>
 
 <div tal:condition="item/getDisplayresult">
 	<tal:block tal:repeat="response item/getChildrenPublishedResponse">
-		<div class="pollanswer pollanswer${repeat/response/number}">${response/getLabel} : ${response/getPourcentValue}% <span title="${response/getVotesAsLocalizedString}">(${response/getVotesAsNumber})</span></div>
+		<div class="pollanswer pollanswer${repeat/response/number}">${response/getLabelAsHtml} : ${response/getPourcentValue}% <span title="${response/getVotesAsLocalizedString}">(${response/getVotesAsNumber})</span></div>
 		<div class="modules-poll-response-container">
 			<div class="modules-poll-response modules-poll-response${repeat/response/number}" style="width: ${response/getPourcentValue}%">&nbsp;</div>
 		</div>
 	</tal:block>
-	<p tal:condition="php: item->getVotes() > 1" change:translate="&modules.poll.frontoffice.votesTotalNumber;; votes item/getVotes" />
-	<p tal:condition="php: item->getVotes() < 2" change:translate="&modules.poll.frontoffice.voteTotalNumber;; votes item/getVotes" />
+	<p tal:condition="php: item.getVotes() GT 1" change:translate="modules.poll.frontoffice.votesTotalNumber; votes item/getVotes"></p>
+	<p tal:condition="php: item.getVotes() LT 2" change:translate="modules.poll.frontoffice.voteTotalNumber; votes item/getVotes"></p>
 </div>
 
 <div tal:condition="not: item/getDisplayresult">
@@ -22,4 +22,4 @@
 <p tal:condition="partComment" tal:content="partComment"/>
 <p tal:condition="closeComment" tal:content="closeComment"/>
 
-<a tal:condition="item/getRelatedpage" change:link="document item/getRelatedpage" change:translate="&modules.poll.frontoffice.SeeMore;" />
+<a tal:condition="item/getRelatedpage" change:link="document item/getRelatedpage" change:translate="modules.poll.frontoffice.SeeMore"></a>

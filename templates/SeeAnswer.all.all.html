@@ -1,5 +1,5 @@
-<h2 tal:content="text/getLabel"/>
+<h2>${text/getLabelAsHtml}</h2>
 <div tal:repeat="a answers">
-<p change:datetime="date a/getCreationdate; format 'd/m/Y H:i'" />
-<p tal:content="a/getLabel" style="border-bottom:1px solid #000; margin: 0; margin-bottom: 20px;" />
+	<p change:datetime="date a/getCreationdate; format 'd/m/Y H:i'" />
+	<p tal:content="a/getLabelAsHtml" style="border-bottom:1px solid #000; margin: 0; margin-bottom: 20px;" />
 </div>
