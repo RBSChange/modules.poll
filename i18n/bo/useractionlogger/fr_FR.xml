@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.poll.bo.useractionlogger" lcid="fr_FR">
+  <key id="update-rootfolder">update.rootfolder {documentlabel}</key>
+  <key id="log-update-rootfolder">log-update-rootfolder</key>
+  <key id="insert-poll">insert.poll {lang} {documentlabel}</key>
+  <key id="log-insert-poll">log-insert-poll</key>
+  <key id="activate-poll">activate.poll {lang} {documentlabel}</key>
+  <key id="log-activate-poll">log-activate-poll</key>
+  <key id="insert-response">insert.response {lang} {documentlabel}</key>
+  <key id="log-insert-response">log-insert-response</key>
+  <key id="deactivated-poll">deactivated.poll {lang} {documentlabel}</key>
+  <key id="log-deactivated-poll">log-deactivated-poll</key>
+  <key id="reactivate-poll">reactivate.poll {lang} {documentlabel}</key>
+  <key id="log-reactivate-poll">log-reactivate-poll</key>
+  <key id="insert-text">insert.text {lang} {documentlabel}</key>
+  <key id="log-insert-text">log-insert-text</key>
+  <key id="deactivated-text">deactivated.text {lang} {documentlabel}</key>
+  <key id="log-deactivated-text">log-deactivated-text</key>
+  <key id="reactivate-text">reactivate.text {lang} {documentlabel}</key>
+  <key id="log-reactivate-text">log-reactivate-text</key>
+</i18n>

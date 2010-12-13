@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.poll.document.response" lcid="fr_FR">
+  <key id="document-name">réponse</key>
+  <key id="edition-form-title">Propriété de la réponse</key>
+  <key id="label">réponse</key>
+  <key id="label-help">saisissez votre réponse</key>
+  <key id="votes">nombre de votes</key>
+</i18n>

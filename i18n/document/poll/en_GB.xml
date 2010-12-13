@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.poll.document.poll" lcid="en_GB">
+  <key id="label">label</key>
+  <key id="question">question</key>
+  <key id="question-help">question-help</key>
+  <key id="description">description</key>
+  <key id="description-help">description-help</key>
+  <key id="displayresult">displayresult</key>
+  <key id="displayresult-help">displayresult-help</key>
+  <key id="partcomment">partcomment</key>
+  <key id="partcomment-help">partcomment-help</key>
+  <key id="closecomment">closecomment</key>
+  <key id="closecomment-help">closecomment-help</key>
+  <key id="relatedpage">relatedpage</key>
+  <key id="relatedpage-help">relatedpage-help</key>
+  <key id="votes">votes</key>
+  <key id="votes-help">votes-help</key>
+  <key id="pollclosing">pollclosing</key>
+  <key id="pollclosing-help">pollclosing-help</key>
+  <key id="generalities"></key>
+  <key id="comment"></key>
+  <key id="display">response display</key>
+  <key id="display-help">response display</key>
+</i18n>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.poll.messages.error" lcid="en_GB">
+  <key id="enddatemustbeafterstartdate">the end date must be after the start date</key>
+</i18n>

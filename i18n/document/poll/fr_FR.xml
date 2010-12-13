@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.poll.document.poll" lcid="fr_FR">
+  <key id="document-name">sondage</key>
+  <key id="edition-form-title">propriété d'un sondage</key>
+  <key id="startpublicationdate">début de parution</key>
+  <key id="startpublicationdate-help">startpublicationdate-help</key>
+  <key id="endpublicationdate">fin de parution</key>
+  <key id="endpublicationdate-help">endpublicationdate-help</key>
+  <key id="label">libellé</key>
+  <key id="label-help">libellé du sondage</key>
+  <key id="question">question</key>
+  <key id="question-help">question-help</key>
+  <key id="description">description</key>
+  <key id="description-help">description-help</key>
+  <key id="displayresult">résultat affiché</key>
+  <key id="displayresult-help">displayresult-help</key>
+  <key id="partcomment">commentaire de participation</key>
+  <key id="partcomment-help">le commentaire sera affiché lors de la participation.</key>
+  <key id="closecomment">commentaire fin de vote</key>
+  <key id="closecomment-help">le commentaire sera affiché lorsque les votes seront fermés</key>
+  <key id="relatedpage">page liée</key>
+  <key id="relatedpage-help">relatedpage-help</key>
+  <key id="votes">nombre de votes</key>
+  <key id="votes-help">votes-help</key>
+  <key id="pollclosing">date de clôture des votes</key>
+  <key id="pollclosing-help">pollclosing-help</key>
+  <key id="generalities">généralités</key>
+  <key id="comment">commentaires</key>
+  <key id="display">affichage des réponses</key>
+  <key id="display-help">affichage des réponses</key>
+</i18n>

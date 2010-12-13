@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.poll.bo.general" lcid="fr_FR">
+  <key id="module-name">sondage</key>
+  <key id="tree-root-name">sondage</key>
+  <key id="system-folder-name">sondage</key>
+  <key id="display-taggued-block-error">Sondage par défaut non trouvé.</key>
+  <key id="no-poll">Aucun sondage à afficher</key>
+  <key id="radio">boutons radio (choix unique)</key>
+  <key id="checkbox">cases à cocher (choix multiple)</key>
+</i18n>

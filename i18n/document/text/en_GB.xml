@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.poll.document.text" lcid="en_GB">
+  <key id="edition-form-title">response properties</key>
+  <key id="label">label</key>
+  <key id="label-help">label</key>
+  <key id="multiline">multiline text</key>
+  <key id="multiline-help">multiline text</key>
+</i18n>

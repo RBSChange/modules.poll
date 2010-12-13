@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.poll.frontoffice" lcid="fr_FR">
+  <key id="submit">Soumettre</key>
+  <key id="seemore">En savoir plus</key>
+  <key id="alreadyparticipated">Vous avez déjà participé à ce sondage.</key>
+  <key id="notdisplayresult">Les résultats du sondage seront publiés à la fin de celui ci.</key>
+  <key id="votenumber">{votes} vote</key>
+  <key id="votesnumber">{votes} votes</key>
+  <key id="votetotalnumber">{votes} vote au total.</key>
+  <key id="votestotalnumber">{votes} votes au total.</key>
+  <key id="missingresponseerror">veuillez répondre au sondage.</key>
+</i18n>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.poll.bo.blocks" lcid="fr_FR">
+  <key id="contextualpoll">dernier sondage de la rubrique</key>
+  <key id="tagguedpoll">sondage par défaut</key>
+</i18n>

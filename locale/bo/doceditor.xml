@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<localization>
-	<entity id="fieldsgroup.comments">
-		<locale lang="fr">commentaires</locale>
-		<locale lang="en">comments</locale>
-	</entity>
-</localization>

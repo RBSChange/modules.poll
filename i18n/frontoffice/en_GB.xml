@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.poll.frontoffice" lcid="en_GB">
+  <key id="submit"></key>
+  <key id="seemore"></key>
+  <key id="alreadyparticipated"></key>
+  <key id="notdisplayresult"></key>
+  <key id="votenumber"></key>
+  <key id="votesnumber"></key>
+  <key id="votetotalnumber"></key>
+  <key id="votestotalnumber"></key>
+</i18n>
