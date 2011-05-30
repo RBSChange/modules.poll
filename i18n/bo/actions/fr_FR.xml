@@ -7,4 +7,7 @@
   <key id="createresponse_">Créer</key>
   <key id="seeanswer">voir les réponses</key>
   <key id="seestats">voir les statistiques</key>
+  <key id="resetPoll">Remettre à zéro les votes</key>
+  <key id="resetPoll-Success">Sondage remis à zéro</key>
+  <key id="resetPoll-Confirm">Êtes-vous sûr(e) de vouloir effacer les votes liés à ce sondage ?</key>
 </i18n>

@@ -7,6 +7,7 @@
 		<document name="poll">
 			<action name="Insert" back-office-name="createPoll"/>
 		</document>
+		<action name="ResetPoll" />
 		<document name="response">
 			<action name="Insert" back-office-name="createResponse"/>
 		</document>
@@ -23,6 +24,7 @@
 			<permission name="GetDialogTopicTree" />
 			<permission name="Remove.topic" />
 			<permission name="EditLocale"/>
+			<permission name="ResetPoll" />
 		</role>
 		<role name="Writer" extend="Guest">
 			<permission name="Order" />
@@ -33,7 +35,6 @@
 			<permission name="Delete.*" />
 			<permission name="Insert.*" />
 			<permission name="Update.*" />
-			<permission name="LoadTags" />
 		</role>
 		<role name="Translator" extend="Guest">
 			<permission name="LoadForTranslation.*" />

@@ -5,4 +5,6 @@
   <key id="label">réponse</key>
   <key id="label-help">saisissez votre réponse</key>
   <key id="votes">nombre de votes</key>
+  <key id="delete-impossible-because-votes">Impossible de supprimer cette réponse sans compromettre les votes. Veuillez remettre à zéro les votes du sondage pour supprimer cette réponse.</key>
+  <key id="update-impossible-because-votes">Impossible de mettre à jour cette réponse sans compromettre les votes</key>
 </i18n>

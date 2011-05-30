@@ -67,6 +67,38 @@ class poll_PollService extends f_persistentdocument_DocumentService
 			$tm->rollBack($e);
 		}
 	}
+	
+	/**
+	 * Reset poll votes
+	 *
+	 * @param poll_persistentdocument_poll $poll
+	 */
+	public function resetVotes($poll)
+	{
+		$tm = $this->getTransactionManager();
+		try
+		{
+			$tm->beginTransaction();
+			
+			$poll->setVotes(0);
+			$this->pp->updateDocument($poll);
+			
+			$responses = $this->pp->createQuery("modules_poll/response")
+				->add(Restrictions::descendentOf($poll->getId()))
+				->find();
+			foreach ($responses as $response)
+			{
+				$response->setVotes(0);
+				$this->pp->updateDocument($response);
+			}
+			
+			$tm->commit();
+		}
+		catch (Exception $e)
+		{
+			throw $tm->rollBack($e);
+		}
+	}
 
 	/**
 	 * This method return the poll that must be displayed in contextual mode

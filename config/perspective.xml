@@ -69,6 +69,7 @@
 				<contextaction name="createResponse"/>
 				<contextaction name="createText"/>
 				<contextaction name="seeStats" />
+				<contextaction name="resetPoll" />
 			</contextactions>
     	</model>
     	<model name="modules_poll/response">
@@ -116,6 +117,7 @@
 		<action name="openTopicOrder" single="true" permission="Order" icon="sort" label="&amp;modules.uixul.bo.actions.Set-children-order;"/>
 		<action name="openTreeNodeOrder" single="true" permission="Order" icon="sort" label="&amp;modules.uixul.bo.actions.Set-children-order;" />
 		<action name="seeStats" single="true" icon="statistics" label="&amp;modules.poll.bo.actions.Seestats;" />
-		<action name="seeAnswer" single="true" icon="history" label="&amp;modules.poll.bo.actions.Seeanswer;" />	    
+		<action name="seeAnswer" single="true" icon="history" label="&amp;modules.poll.bo.actions.Seeanswer;" />
+		<action name="resetPoll" single="true" icon="undo" permission="ResetPoll" label="&amp;modules.poll.bo.actions.ResetPoll;" />
 	</actions>
 </perspective>
