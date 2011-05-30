@@ -63,7 +63,7 @@ class poll_ResponseService extends f_persistentdocument_DocumentService
 		{
 			if (!f_permission_PermissionService::getInstance()->hasPermission(users_UserService::getInstance()->getCurrentBackEndUser(), "modules_poll.UpdateResponse", $parent->getId()) )
 			{
-				throw new IllegalOperationException('Impossible to update this response without compromize the data of votes');
+				throw new IllegalOperationException(f_Locale::translateUI('&modules.poll.document.response.update-impossible-because-votes;'));
 			}
 		}
 	}
@@ -77,7 +77,7 @@ class poll_ResponseService extends f_persistentdocument_DocumentService
 		$parent = $this->getParentOf($document);
 		if ( $parent->getVotes()!== 0 )
 		{
-			throw new IllegalOperationException('Impossible to delete this response without compromize the data of votes');
+			throw new IllegalOperationException(f_Locale::translateUI('&modules.poll.document.response.delete-impossible-because-votes;'));
 		}
 
 		$texts = poll_TextanswerService::getInstance()->createQuery()->add(Restrictions::eq('text.id', $document->getId()))->find();

@@ -15,4 +15,10 @@
 	<entity id="votes">
     	<locale lang="fr">nombre de votes</locale>
   	</entity>
+  	<entity id="delete-impossible-because-votes">
+  		<locale lang="fr">Impossible de supprimer cette réponse sans compromettre les votes. Veuillez remettre à zéro les votes du sondage pour supprimer cette réponse.</locale>
+  	</entity>
+  	<entity id="update-impossible-because-votes">
+  		<locale lang="fr">Impossible de mettre à jour cette réponse sans compromettre les votes</locale>
+  	</entity>
 </localization>

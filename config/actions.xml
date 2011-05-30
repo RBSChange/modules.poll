@@ -62,4 +62,23 @@
     	return status != undefined;
     ]]></checkDisplay>
   </action>
+  <action name="resetPoll">
+    <parameter name="listWidget"/>
+    <body><![CDATA[
+    	if (confirm('&modules.poll.bo.actions.ResetPoll-Confirm;'))	{
+			var pollId = listWidget.getSelectedIds()[0];
+			var me = this;
+			var callBack = function(result) {
+				me.resetPollSuccess(result);
+			}
+			wCore.executeJSON('poll', 'ResetPoll', {cmpref: pollId}, callBack, true);
+		}
+    ]]></body>
+  </action>
+  <action name="resetPollSuccess">
+  	<parameter name="result" />
+    <body><![CDATA[
+		getController().alert(result.contents.message);
+    ]]></body>
+  </action>
 </actions>

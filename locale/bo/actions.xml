@@ -28,4 +28,13 @@
     <locale lang="fr">voir les statistiques</locale>
     <locale lang="en">see statistics</locale>
   </entity>
+  <entity id="ResetPoll">
+    <locale lang="fr">Remettre à zéro les votes</locale>
+  </entity>
+  <entity id="ResetPoll-Success">
+    <locale lang="fr">Sondage remis à zéro</locale>
+  </entity>
+  <entity id="ResetPoll-Confirm">
+    <locale lang="fr">Êtes-vous sûr(e) de vouloir effacer les votes liés à ce sondage ?</locale>
+  </entity>
 </localization>
