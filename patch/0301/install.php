@@ -1,5 +1,5 @@
 <?php
-class poll_patch_0300 extends patch_BasePatch
+class poll_patch_0301 extends patch_BasePatch
 {
  
 	/**
@@ -28,6 +28,6 @@ class poll_patch_0300 extends patch_BasePatch
 	 */
 	protected final function getNumber()
 	{
-		return '0300';
+		return '0301';
 	}
 }
